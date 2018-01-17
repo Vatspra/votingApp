@@ -1,0 +1,18 @@
+
+
+<div class="container">
+  <div class="jumbotron">
+    <div ng-hide="authenticated">
+      <h2 class="text-center">
+     Select a poll to see the results and to vote .
+    </h2>
+      <h3 class="text-center">
+       Please  <a href="#!register"> Register</a> To create your own poll
+      </h3>
+    </div>
+    
+   <ul class="list-group" ng-repeat="post in posts">
+    <li class="list-group-item list-group-item-danger text-center" ng-click="update($event)" >{{post.name}}</li>
+  </ul>
+ </div>
+</div>

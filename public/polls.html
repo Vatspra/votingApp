@@ -1,0 +1,31 @@
+<div class="container">
+ 
+
+    
+    <h2 class="text-center">
+      You are Voting for Poll <span id="important">{{nameOfPole}}</span>
+    </h2>                                         
+    <br>
+   
+    <h3>Select Your Choice </h3><br>
+    <div class="jumbotron">
+       <div class="row">
+   <div class="col-md-6">
+   <form id="myForm" ng-submit="selectedForm()">
+    <select name="selectedOption" ng-model="votedFor" form="myForm" class="btn">
+      <option value disabled="disabled" selected="selected" hidden>select your choice</option>
+      <option ng-repeat="pole in polls" value={{pole}}>{{pole}}</option>
+    </select>
+    <input id="div" type="submit" class="btn btn-success">
+ </form>
+     </div>
+
+
+ <div class="col-md-6" id="chart_div">
+  
+  
+   </div>
+    </div>
+ </div>
+  </div>
+
